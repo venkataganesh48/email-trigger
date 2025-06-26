@@ -14,7 +14,7 @@ if [ "$ACTION" == "notify" ]; then
     --region "$REGION" \
     --subject "Approval Needed to Stop EC2" \
     --message "Your EC2 instance ($INSTANCE_ID) is running. Please go to AWS CodePipeline and approve the pipeline to stop it. \
-    Approval is needed to stop it https://console.aws.amazon.com/codesuite/codepipeline/pipelines/ec2-stop-pipeline/view?region=$REGION"\
+             Approval is needed to stop it https://console.aws.amazon.com/codesuite/codepipeline/pipelines/ec2-stop-pipeline/view?region=$REGION"\
 fi
 
 if [ "$ACTION" == "stop" ]; then
