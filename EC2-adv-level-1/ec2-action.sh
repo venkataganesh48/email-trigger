@@ -3,9 +3,9 @@
 ACTION=$1  # notify or stop
 
 # Configuration
-INSTANCE_ID="i-07d9fc2449d1956f3"
+INSTANCE_ID="i-0ed53cca22e7d539b"
 TOPIC_ARN="arn:aws:sns:us-east-1:934977584611:email-trigger"
-REGION="ap-south-1"
+REGION="us-east-1"
 
 if [ "$ACTION" == "notify" ]; then
   echo "Sending approval email..."
